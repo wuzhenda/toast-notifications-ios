@@ -126,7 +126,8 @@ static iToastSettings *sharedSettings = nil;
 	v.backgroundColor = [UIColor colorWithRed:theSettings.bgRed green:theSettings.bgGreen blue:theSettings.bgBlue alpha:theSettings.bgAlpha];
 	v.layer.cornerRadius = theSettings.cornerRadius;
 	
-	UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+	//UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+	UIWindow *window=[[[UIApplication sharedApplication] delegate] window];
 	
 	CGPoint point;
 	
